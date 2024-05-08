@@ -1,24 +1,27 @@
 "use strict"
 
-let shoe = {
-    supplerCode: "yuh",
-    productNumber:"2345",
-    size:"Large"
-};
+
 
 let partCode1 ="yuh:2345-Medium";
 
 
 function parsePartCode(code){
    
-    console.log(`
-    ${code.supplerCode}:${code.productNumber}-${code.size}`);
-    
-    console.log(`
-    ${code.supplerCode},
-    ${code.productNumber},
-    ${code.size}`);
-    
+    let suppliercode = code.substring(0, code.indexOf(":"));
+    let productNumber = code.substring((":")+1, code.indexOf("-"));
+    let size = code.substring(code.indexOf("-")+1);
+
+    return{
+        suppliercode:suppliercode,
+        productNumber: productNumber,
+        size: size
+    };
+
+   
 }
-parsePartCode(shoe);
+parsePartCode = parsePartCode(partCode1);
+console.log(`
+supplercode:${parsePartCode.suppliercode},
+productNumber:${parsePartCode.productNumber},
+size:${parsePartCode.size}`);
 
