@@ -8,7 +8,7 @@ let partCode1 ="yuh:2345-Medium";
 function parsePartCode(code){
    
     let suppliercode = code.substring(0, code.indexOf(":"));
-    let productNumber = code.substring((":")+1, code.indexOf("-"));
+    let productNumber = code.substring(code.indexOf(":")+1, code.indexOf("-"));
     let size = code.substring(code.indexOf("-")+1);
 
     return{
@@ -19,9 +19,9 @@ function parsePartCode(code){
 
    
 }
-parsePartCode = parsePartCode(partCode1);
+let partCode = parsePartCode(partCode1);
 console.log(`
-supplercode:${parsePartCode.suppliercode},
-productNumber:${parsePartCode.productNumber},
-size:${parsePartCode.size}`);
+supplercode:${partCode.suppliercode},
+productNumber:${partCode.productNumber},
+size:${partCode.size}`);
 
