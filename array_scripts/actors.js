@@ -31,13 +31,16 @@ for(let i = 0; i<academyMembers.length; i++){
     if(academyMembers[i].films.length >= 3 ){
         console.log(`${academyMembers[i].name} more than 3 films`)
     }
+    if(academyMembers[i].name.indexOf("Bob") === 0 ){
+        console.log(`${academyMembers[i].name} Starts with the three first letters of B O B`);
+    }
 }
 
 
-for(let i = 0; i<academyMembers.length; i++){
-   let bobName = academyMembers[i].name
-    if(bobName.indexOf("Bob")!== -1){
-        console.log(`${academyMembers[i].name} starts with bob`)
+// for(let i = 0; i<academyMembers.length; i++){
+//    let bobName = academyMembers[i].name
+//     if(bobName.indexOf("Bob")!== -1){
+//         console.log(`${academyMembers[i].name} starts with bob`)
         
-    }  
-}
+//     }  
+// }
