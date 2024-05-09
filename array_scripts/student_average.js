@@ -20,6 +20,8 @@ function calStudentAverage(listStudent){
     for (let i = 0; i < numberOfStudents; i++) {
         // a placeholder for the total
         let total = 0;
+
+
         let currentStudentScores = listStudent[i].scores;
         let numberOfScoresForStudent = currentStudentScores.length
 
@@ -33,5 +35,6 @@ function calStudentAverage(listStudent){
 
     
 }
+// called function and then the list variable
 calStudentAverage(students);
 
