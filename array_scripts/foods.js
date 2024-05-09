@@ -9,7 +9,9 @@ function takeOutAmount(meals){
     let totalcost = 0;
     // let numberOfMeals = mealsArray.length
 
+    // starting a loop
     for(let i = 0; i < meals.length; i++){
+
         totalcost += meals[i].price;
     }
 
@@ -20,6 +22,7 @@ let lunchTotal = takeOutAmount(lunch);
 let lunchTax = lunchTotal * (8/100);
 let lunchTip = lunchTotal * (18/100);
 let totalDue = lunchTotal +lunchTax +lunchTip;
+
 
 console.log("the lunch total due is: "+lunchTotal); 
 console.log("the tax due is: "+lunchTax); 
