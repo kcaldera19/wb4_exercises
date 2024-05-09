@@ -33,3 +33,5 @@ function getAverage(scores){
 }
 console.log(getAverage(myScores));
 console.log(getAverage(yourScores));
+
+
