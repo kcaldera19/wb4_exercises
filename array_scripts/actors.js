@@ -1,4 +1,7 @@
 "use Strict"
+
+
+// list of object in an array
 let academyMembers = [
     {
         memID: 101,
@@ -24,16 +27,25 @@ let academyMembers = [
     },
 ];
 
+// finds the Academy member whose Id is 187
+//  length is just the length of the list
 for(let i = 0; i<academyMembers.length; i++){
     if(academyMembers[i].memID === 187){
         console.log(`${academyMembers[i].name} is 187`);
     } 
+    // finding who has been in at least 3 films
     if(academyMembers[i].films.length >= 3 ){
         console.log(`${academyMembers[i].name} more than 3 films`)
     }
+    // name starts with bob
+    //  checking the name properity indexOf and 0 is the satrting postion if you want to find at the beginning 
     if(academyMembers[i].name.indexOf("Bob") === 0 ){
         console.log(`${academyMembers[i].name} Starts with the three first letters of B O B`);
     }
+
+    
+
+
 }
 
 

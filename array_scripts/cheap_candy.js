@@ -19,7 +19,8 @@ for(let i =0; i< products.length; i++){
         console.log(`${products[i].product} cost ${ products[i].price} is less than four`)
 
     }
-}
+}   
+    // !== if the you want to find m&M any where in the lists
 for(let i =0; i< products.length; i++){
     if(products[i].product.indexOf("M&M") !== -1){
         console.log(`${products[i].product} cost ${ products[i].product} and it is M&M`)
