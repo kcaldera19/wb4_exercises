@@ -53,6 +53,3 @@ courses.sort(compareFn);
 console.log(courses)
 
 
-
-courses.sort(compareFn);
-console.log(courses)
