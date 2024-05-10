@@ -27,7 +27,7 @@ function compareProduct(a, b) {
 products.sort(compareProduct);
 console.log(products);
 
-console.log(("------------------------------------------"))
+console.log("------------------------------------------")
 
 // Sorting price from lowest to highest
 function comparePrice(a, b) {
